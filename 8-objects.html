@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        // 8a 8b 8c
+    let product ={
+        name : "basketball",
+        price: 2095
+    }
+    console.log(product.price)
+    product.price = product.price + 500
+    console.log(product.price)
+
+    product['delivery-time'] = '3 days'
+    console.log(product);
+      
+    // 8d
+function isSameProduct(product1, product2) {
+  return product1.name === product2.name && product1.price === product2.price;
+}
+
+const product1 = {
+  name: 'shoe',
+  price: 5000
+};
+
+const product2 = {
+  name: 'shocks',
+  price: 500
+};
+
+console.log(isSameProduct(product1, product2));
+
+//   8e
+let message = 'good morning'
+let answer = message.toUpperCase()
+console.log(answer)
+
+
+
+    </script>
+</body>
+</html>

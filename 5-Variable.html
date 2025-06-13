@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        // 5a
+        let name = 'Ragul'
+        console.log(name)
+
+        // 5b
+        console.log(`'My name is ${name}`)
+
+        // 5c
+        let coffee = 1*5
+        let bagels = 2*3
+        let soups = 1*9
+        let cost = coffee + bagels + soups
+        
+        // 5d
+        console.log(cost)
+
+        // 5e
+        let tax = (20*0.1*100)/100
+        console.log(tax)
+
+        // 5f
+        console.log(`Tax 10:${tax}`)
+
+        // 5g
+        let total = cost + tax
+        console.log(`Total cost ${total}`)
+    </script>
+</body>
+<body>
+
+    <!-- 5h -->
+
+    <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`)
+    ">Show Quantity</button>
+
+    <button onclick="
+      cartQuantity++;
+      console.log(`Cart quantity: ${cartQuantity}`)
+    ">Add to Cart</button>
+
+    <button onclick="
+      cartQuantity += 2;
+      console.log(`Cart quantity: ${cartQuantity}`)
+    ">+2</button>
+
+    <button onclick="
+      cartQuantity += 3;
+      console.log(`Cart quantity: ${cartQuantity}`)
+    ">+3</button>
+
+    <button onclick="
+      cartQuantity += 4;
+      console.log(`Cart quantity: ${cartQuantity}`)
+    ">+4</button>
+
+    <button onclick="
+      cartQuantity += 5;
+      console.log(`Cart quantity: ${cartQuantity}`)
+    ">+5</button>
+
+    <button onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset.');
+      console.log(`Cart quantity: ${cartQuantity}`)
+      ">Reset Cart</button>
+
+    <!-- 5i -->
+    <button onclick="
+    cartQuantity -=1;
+    console.log(`Cart quantity: ${cartQuantity}`)"
+    >Remove Cart</button>
+
+    <!-- 5j -->
+    <button onclick="
+    cartQuantity -=2;
+    console.log(`Cart quantity: ${cartQuantity}`)"
+    >-2</button>
+
+    <!-- 5j -->
+    <button onclick="
+    cartQuantity -=3;
+    console.log(`Cart quantity: ${cartQuantity}`)"
+    >-3</button>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+
+<!-- 5k -->
+<body>
+    <h1>calculater</h1>
+
+    <!-- 5l -->
+     
+<!-- Buttons -->
+   <button onclick="calculation += '1'; console.log(calculation);">1</button>
+   <button onclick="calculation += '2'; console.log(calculation);">2</button>
+   <button onclick="calculation += '3'; console.log(calculation);">3</button>
+   <button onclick="calculation += ' + '; console.log(calculation);">+</button>
+   <button onclick="console.log(eval(calculation));">=</button>
+
+
+     <script>
+        let calculation = "";
+     </script>
+</body>
+
+</html>
